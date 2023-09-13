@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal interface ISwim
+    internal interface IFlyer
     {
+        void Fly();
     }
 }

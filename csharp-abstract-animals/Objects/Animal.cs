@@ -8,9 +8,15 @@ namespace csharp_abstract_animals
 {
     public abstract class Animal
     {
+        public string Name { get; set; }
+
+        public Animal(string name)
+        {
+            Name = name;
+        }
         public void Sleep()
         {
-            Console.WriteLine("ZZZzzZzZ...");
+            Console.WriteLine("Riposo:...ZZZzzZzZ...!!");
         }
         public abstract void AnimalNoise();
         public abstract void food();

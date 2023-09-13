@@ -8,14 +8,18 @@ namespace csharp_abstract_animals
 {
     internal class Dog : Animal
     {
+        public Dog(string name) : base(name)
+        {
+        }
+
         public override void AnimalNoise()
         {
-            Console.WriteLine("...Woooff woof bau!!");
+            Console.WriteLine("Qual'è il tuo verso?...Woooff woof bau!!");
         }
 
         public override void food()
         {
-            Console.WriteLine("Mi nutro di tutto ciò che capita sotto il mio naso, anche le tue ciabatte!! Soprattutto le tue ciabatte.");
+            Console.WriteLine("Di cosa ti nutri?...Mi nutro di tutto ciò che capita sotto al mio naso, anche le tue ciabatte!! Soprattutto le tue ciabatte.");
         }
     }
 }
